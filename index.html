@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valtia Gaming - Torneos</title>
+    <link rel="icon" href="assets/images/LOGO.jpg" type="image/jpeg"> <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/Lucide.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <header class="bg-black/80 backdrop-blur-sm sticky top-0 z-50 py-3 shadow-md shadow-yellow-500/10">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center">
+                 <img src="assets/images/LOGO.jpg" alt="Logo de Valtia Gaming" class="h-12 md:h-14 w-auto mr-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                 <span class="text-2xl font-bold text-yellow-400 nordic-pattern hidden">Valtia Gaming</span>
+            </a>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="text-white hover:text-yellow-400 transition duration-300">Inicio</a>
+                <a href="#tournaments" class="text-white hover:text-yellow-400 transition duration-300">Torneos</a>
+                <a href="#social-media" class="text-white hover:text-yellow-400 transition duration-300">Redes</a>
+                <a href="#gallery" class="text-white hover:text-yellow-400 transition duration-300">Galería</a>
+                <a href="#admin" class="text-white hover:text-yellow-400 transition duration-300">Admin</a>
+            </nav>
+            <div class="hidden md:flex space-x-3">
+                <button id="loginBtn" class="px-4 py-2 rounded-md btn-secondary text-sm font-medium"> <span class="lucide mr-1 align-middle">&#xe9b1;</span> Iniciar Sesión </button>
+                <button id="registerBtn" class="px-4 py-2 rounded-md btn-primary text-sm font-medium"> <span class="lucide mr-1 align-middle">&#xea0c;</span> Registrarse </button>
+            </div>
+            <button id="mobileMenuBtn" class="md:hidden text-white focus:outline-none"> <span class="lucide text-2xl">&#xe9a7;</span> </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-black/90 absolute top-full left-0 w-full">
+             <nav class="flex flex-col items-center space-y-4 py-4">
+                 <a href="#home" class="block py-2 text-white hover:text-yellow-400 transition duration-300">Inicio</a>
+                 <a href="#tournaments" class="block py-2 text-white hover:text-yellow-400 transition duration-300">Torneos</a>
+                 <a href="#social-media" class="block py-2 text-white hover:text-yellow-400 transition duration-300">Redes</a>
+                 <a href="#gallery" class="block py-2 text-white hover:text-yellow-400 transition duration-300">Galería</a>
+                 <a href="#admin" class="block py-2 text-white hover:text-yellow-400 transition duration-300">Admin</a>
+                 <button id="mobileLoginBtn" class="w-3/4 mt-4 px-4 py-2 rounded-md btn-secondary text-sm font-medium">Iniciar Sesión</button>
+                 <button id="mobileRegisterBtn" class="w-3/4 mt-2 px-4 py-2 rounded-md btn-primary text-sm font-medium">Registrarse</button>
+             </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+
+        <section id="home" class="text-center py-16">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 text-yellow-400 drop-shadow-lg">Bienvenido a Valtia Gaming</h1>
+            <p class="text-xl mb-8 text-gray-200 drop-shadow-sm">Tu arena para la competición. ¡Regístrate y demuestra tu habilidad!</p>
+            <div class="inline-block mx-auto rounded-lg shadow-lg nordic-border mb-8 overflow-hidden">
+                 <img src="https://placehold.co/800x400/2a2a2a/FFD700?text=Valtia+Gaming+Arena" alt="[Imagen representativa de Valtia Gaming Arena]" class="block" onerror="this.src='https://placehold.co/800x400/1a1a1a/ffffff?text=Error+al+cargar+imagen'; this.alt='Error al cargar imagen'">
+            </div>
+             <br> <a href="#tournaments" class="px-6 py-3 rounded-md btn-primary text-lg font-semibold inline-flex items-center mt-4"> Ver Torneos Disponibles <span class="lucide ml-2">&#xea1f;</span> </a>
+        </section>
+
+        <section id="tournaments" class="py-16">
+             <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-yellow-400 drop-shadow-md">Próximos Torneos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-yellow-500/30 flex flex-col">
+                    <img src="https://placehold.co/600x400/2a2a2a/FFD700?text=Logo+FC25" alt="[Logo del juego FC25]" class="w-full h-48 object-contain p-4 bg-gray-800" onerror="this.src='https://placehold.co/600x400/2a2a2a/ffffff?text=FC25'; this.alt='FC25'">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Torneo FC25 - Copa Valhalla</h3>
+                        <p class="text-gray-400 mb-1 text-sm">Fecha: 30 de Abril, 2025</p>
+                        <p class="text-gray-300 mb-4 text-sm flex-grow">Demuestra quién manda en el campo de juego.</p>
+                        <button class="rules-btn rounded-md btn-rules inline-flex items-center justify-center mb-3"> <span class="lucide mr-1 text-xs">&#xe965;</span> <span class="btn-text">Ver Reglas</span> </button>
+                        <div class="rules-content hidden"> <p class="font-semibold mb-2 text-yellow-200">Reglas Generales FC25:</p> <ul> <li>Formato: Eliminación directa.</li> <li>Plataforma: PS5 / Xbox Series X/S (especificar).</li> <li>Duración Partidos: 6 minutos por tiempo.</li> <li>Configuración: Táctica / Competitiva.</li> <li>Equipos: Clubes y Selecciones (sin equipos personalizados).</li> <li>Desconexiones: Consultar normativa específica.</li> <li>Fair Play obligatorio.</li> </ul> </div>
+                        <div class="flex justify-between items-center mt-auto pt-3 border-t border-gray-700/50"> <span class="text-sm text-gray-500">Inscripciones Abiertas</span> <button class="px-4 py-2 rounded-md btn-primary text-sm font-medium apply-btn inline-flex items-center" data-tournament="FC25 - Copa Valhalla"> Aplicar <span class="lucide ml-1 text-xs">&#xe97a;</span> </button> </div>
+                    </div>
+                </div>
+                <div class="card rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-yellow-500/30 flex flex-col">
+                     <img src="https://placehold.co/600x400/2a2a2a/FFD700?text=Logo+League+of+Legends" alt="[Logo del juego League of Legends]" class="w-full h-48 object-contain p-4 bg-gray-800" onerror="this.src='https://placehold.co/600x400/2a2a2a/ffffff?text=LoL'; this.alt='League of Legends'">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Liga de Leyendas - Reto Nórdico</h3>
+                        <p class="text-gray-400 mb-1 text-sm">Fecha: 5 de Mayo, 2025</p>
+                        <p class="text-gray-300 mb-4 text-sm flex-grow">Coordina con tu equipo y conquista la Grieta.</p>
+                         <button class="rules-btn rounded-md btn-rules inline-flex items-center justify-center mb-3"> <span class="lucide mr-1 text-xs">&#xe965;</span> <span class="btn-text">Ver Reglas</span> </button>
+                        <div class="rules-content hidden"> <p class="font-semibold mb-2 text-yellow-200">Reglas Generales LoL:</p> <ul> <li>Formato: Fase de Grupos + Eliminatorias (Bo3).</li> <li>Mapa: Grieta del Invocador.</li> <li>Modo: Torneo de Reclutamiento.</li> <li>Equipo: 5 jugadores + suplentes (opcional).</li> <li>Pausas: Limitadas por equipo, consultar normativa.</li> <li>Comunicación: Obligatorio uso de Discord (servidor provisto).</li> <li>Actualizaciones: Se jugará en el parche actual del servidor live.</li> </ul> </div>
+                         <div class="flex justify-between items-center mt-auto pt-3 border-t border-gray-700/50"> <span class="text-sm text-gray-500">Inscripciones Abiertas</span> <button class="px-4 py-2 rounded-md btn-primary text-sm font-medium apply-btn inline-flex items-center" data-tournament="Liga de Leyendas - Reto Nórdico"> Aplicar <span class="lucide ml-1 text-xs">&#xe97a;</span> </button> </div>
+                    </div>
+                </div>
+                <div class="card rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-yellow-500/30 flex flex-col">
+                     <img src="https://placehold.co/600x400/2a2a2a/FFD700?text=Logos:+DBZ+MK+FF" alt="[Logos de juegos: DBZ BT3, Mortal Kombat, Free Fire]" class="w-full h-48 object-contain p-4 bg-gray-800" onerror="this.src='https://placehold.co/600x400/2a2a2a/ffffff?text=DBZ+MK+FF'; this.alt='DBZ, MK, Free Fire'">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Arena Multiverso Valtia</h3>
+                        <p class="text-gray-400 mb-1 text-sm">Fecha: 10 de Mayo, 2025</p>
+                        <p class="text-gray-300 mb-4 text-sm flex-grow">¡Torneos simultáneos de DBZ BT3, Mortal Kombat y Free Fire!</p>
+                         <button class="rules-btn rounded-md btn-rules inline-flex items-center justify-center mb-3"> <span class="lucide mr-1 text-xs">&#xe965;</span> <span class="btn-text">Ver Reglas</span> </button>
+                        <div class="rules-content hidden"> <p class="font-semibold mb-2 text-yellow-200">Reglas Generales Multiverso:</p> <p class="mb-1 font-medium text-gray-200">DBZ Budokai Tenkaichi 3:</p> <ul> <li>Formato: Doble Eliminación.</li> <li>Plataforma: PS2 (Emulador o Consola).</li> <li>Personajes: Todos permitidos (excepto fusiones gigantes si se acuerda).</li> </ul> <p class="mt-3 mb-1 font-medium text-gray-200">Mortal Kombat 1:</p> <ul> <li>Formato: Eliminación directa.</li> <li>Plataforma: Multiplataforma (con crossplay activado).</li> <li>Configuración: Por defecto del modo torneo.</li> </ul> <p class="mt-3 mb-1 font-medium text-gray-200">Free Fire:</p> <ul> <li>Formato: Battle Royale por puntos (escuadras).</li> <li>Mapas: Rotación (Bermuda, Purgatorio, Kalahari).</li> <li>Puntuación: Según tabla oficial Garena (provisional).</li> </ul> </div>
+                         <div class="flex justify-between items-center mt-auto pt-3 border-t border-gray-700/50"> <span class="text-sm text-gray-500">Próximamente</span> <button class="px-4 py-2 rounded-md btn-secondary text-sm font-medium apply-btn inline-flex items-center" data-tournament="Arena Multiverso Valtia" disabled> Aplicar <span class="lucide ml-1 text-xs">&#xe97a;</span> </button> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="social-media" class="py-16 text-center rounded-lg my-12 nordic-border border-yellow-600 px-4">
+             <h2 class="text-4xl md:text-5xl font-bold mb-10 text-yellow-400 drop-shadow-md">Síguenos en Redes</h2>
+             <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">Mantente al día con los últimos torneos, noticias y contenido exclusivo de Valtia Gaming.</p>
+             <div class="flex justify-center space-x-6 md:space-x-10"> <a href="#" aria-label="Facebook de Valtia Gaming" class="social-icon text-gray-400 hover:text-yellow-400 transition duration-300 transform hover:scale-110"> <span class="lucide">&#xe8a0;</span> </a> <a href="#" aria-label="Twitter de Valtia Gaming" class="social-icon text-gray-400 hover:text-yellow-400 transition duration-300 transform hover:scale-110"> <span class="lucide">&#xeae9;</span> </a> <a href="#" aria-label="Instagram de Valtia Gaming" class="social-icon text-gray-400 hover:text-yellow-400 transition duration-300 transform hover:scale-110"> <span class="lucide">&#xe91a;</span> </a> <a href="#" aria-label="Twitch de Valtia Gaming" class="social-icon text-gray-400 hover:text-yellow-400 transition duration-300 transform hover:scale-110"> <span class="lucide">&#xeae4;</span> </a> <a href="#" aria-label="Discord de Valtia Gaming" class="social-icon text-gray-400 hover:text-yellow-400 transition duration-300 transform hover:scale-110"> <span class="lucide">&#xe888;</span> </a> </div>
+        </section>
+
+        <section id="gallery" class="py-16">
+             <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-yellow-400 drop-shadow-md">Galería de Eventos</h2>
+             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg border border-gray-700"> <img src="assets/images/1.jpg" alt="[Foto de evento Valtia Gaming - Montañas]" class="w-full h-auto cursor-pointer" onerror="this.src='https://placehold.co/400x300/1a1a1a/ffffff?text=Error'; this.alt='Error al cargar imagen'"> </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg border border-gray-700"> <img src="assets/images/LOGO.jpg" alt="[Logo Valtia Gaming en galería]" class="w-full h-auto cursor-pointer p-4 bg-gray-800" onerror="this.src='https://placehold.co/400x300/1a1a1a/ffffff?text=Error'; this.alt='Error al cargar imagen'"> </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg border border-gray-700"> <img src="assets/images/1.jpg" alt="[Foto de evento Valtia Gaming - Paisaje]" class="w-full h-auto cursor-pointer" onerror="this.src='https://placehold.co/400x300/1a1a1a/ffffff?text=Error'; this.alt='Error al cargar imagen'"> </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg border border-gray-700"> <img src="assets/images/LOGO.jpg" alt="[Detalle logo Valtia Gaming]" class="w-full h-auto cursor-pointer p-4 bg-gray-800" onerror="this.src='https://placehold.co/400x300/1a1a1a/ffffff?text=Error'; this.alt='Error al cargar imagen'"> </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg border border-gray-700"> <img src="https://placehold.co/400x300/2a2a2a/FFD700?text=Competidores" alt="[Foto de competidores en evento]" class="w-full h-auto cursor-pointer" onerror="this.src='https://placehold.co/400x300/1a1a1a/ffffff?text=Error'; this.alt='Error al cargar imagen'"> </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg border border-gray-700"> <img src="assets/images/1.jpg" alt="[Vista panorámica evento Valtia]" class="w-full h-auto cursor-pointer" onerror="this.src='https://placehold.co/400x300/1a1a1a/ffffff?text=Error'; this.alt='Error al cargar imagen'"> </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg border border-gray-700"> <img src="https://placehold.co/400x300/2a2a2a/FFD700?text=Setup+Gaming" alt="[Foto de setup gaming en torneo]" class="w-full h-auto cursor-pointer" onerror="this.src='https://placehold.co/400x300/1a1a1a/ffffff?text=Error'; this.alt='Error al cargar imagen'"> </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg border border-gray-700"> <img src="assets/images/LOGO.jpg" alt="[Logo Valtia Gaming]" class="w-full h-auto cursor-pointer p-4 bg-gray-800" onerror="this.src='https://placehold.co/400x300/1a1a1a/ffffff?text=Error'; this.alt='Error al cargar imagen'"> </div>
+             </div>
+        </section>
+
+        <section id="admin" class="py-16">
+             <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-yellow-400 drop-shadow-md">Panel de Administrador</h2>
+             <div class="max-w-3xl mx-auto card p-6 rounded-lg shadow-lg">
+                 <h3 class="text-2xl font-semibold mb-4 text-yellow-300">Gestión de Torneos</h3>
+                 <p class="text-gray-400 mb-6">Cierra inscripciones y genera/gestiona las llaves de enfrentamientos.</p>
+                 <div class="mb-6">
+                     <label for="tournamentSelect" class="block text-sm font-medium text-gray-300 mb-2">Seleccionar Torneo:</label>
+                     <select id="tournamentSelect" name="tournamentSelect" class="w-full p-2 rounded-md bg-gray-700 border border-gray-600 text-white focus:ring-yellow-500 focus:border-yellow-500">
+                         <option value="fc25">FC25 - Copa Valhalla</option>
+                         <option value="lol">Liga de Leyendas - Reto Nórdico</option>
+                         <option value="multiverso">Arena Multiverso Valtia</option>
+                     </select>
+                 </div>
+                 <button id="closeRegistrationBtn" class="w-full md:w-auto mb-4 md:mb-0 md:mr-4 px-5 py-2 rounded-md btn-secondary text-base font-medium inline-flex items-center"> <span class="lucide mr-2">&#xe958;</span> Cerrar Inscripciones </button>
+                 <button id="generateBracketBtn" class="w-full md:w-auto px-5 py-2 rounded-md btn-primary text-base font-medium inline-flex items-center" disabled> <span class="lucide mr-2">&#xea1f;</span> Generar/Reiniciar Llaves </button>
+                 <div id="bracket-generator" class="mt-8 hidden">
+                     <h4 class="text-xl font-semibold mb-4 text-yellow-300">Llave del Torneo (Simulación Interactiva)</h4>
+                     <div id="bracket-rounds-container" class="space-y-6"></div>
+                     <div id="bracket-placeholder">
+                        <p class="text-gray-500">Aún no se han generado las llaves.</p>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+        <div id="messageBox" class="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm flex items-center justify-center z-[100] hidden p-4">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl max-w-sm w-full nordic-border border-yellow-500">
+                <div class="flex justify-between items-center mb-4"> <h3 id="messageTitle" class="text-xl font-semibold text-yellow-400">Mensaje</h3> <button id="closeMessageBox" class="text-gray-400 hover:text-white
